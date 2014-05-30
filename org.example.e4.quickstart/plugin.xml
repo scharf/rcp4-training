@@ -11,6 +11,10 @@
                name="applicationCSS"
                value="platform:/plugin/org.example.e4.quickstart/css/default.css">
          </property>
+         <property
+               name="appName"
+               value="org.example.e4.quickstart">
+         </property>
       </product>
    </extension>
 

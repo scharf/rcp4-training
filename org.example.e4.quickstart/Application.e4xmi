@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_GR9NYOgBEeOTe_bwk1ODUg" elementId="org.eclipse.e4.ide.application" bindingContexts="_GR9NaegBEeOTe_bwk1ODUg">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_GR9NYegBEeOTe_bwk1ODUg" label="org.example.e4.quickstart" width="500" height="400">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_GR9NYegBEeOTe_bwk1ODUg" label="%trimmedwindow.label.1" width="500" height="400">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_GR90cegBEeOTe_bwk1ODUg">
       <children xsi:type="advanced:Perspective" xmi:id="_GR90cugBEeOTe_bwk1ODUg">
         <children xsi:type="basic:PartSashContainer" xmi:id="_GR90c-gBEeOTe_bwk1ODUg">
           <children xsi:type="basic:PartStack" xmi:id="_GR90dOgBEeOTe_bwk1ODUg">
-            <children xsi:type="basic:Part" xmi:id="_GR90degBEeOTe_bwk1ODUg" contributionURI="bundleclass://org.example.e4.quickstart/org.example.e4.quickstart.parts.SamplePart" label="Sample Part"/>
+            <children xsi:type="basic:Part" xmi:id="_GR90degBEeOTe_bwk1ODUg" contributionURI="bundleclass://org.example.e4.quickstart/org.example.e4.quickstart.parts.SamplePart" label="%part.label.1"/>
           </children>
         </children>
       </children>
     </children>
     <mainMenu xmi:id="_GR9NeegBEeOTe_bwk1ODUg" elementId="menu:org.eclipse.ui.main.menu">
-      <children xsi:type="menu:Menu" xmi:id="_GR9NeugBEeOTe_bwk1ODUg" label="File">
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_GR9Ne-gBEeOTe_bwk1ODUg" label="Open" iconURI="platform:/plugin/org.example.e4.quickstart/icons/sample.png" command="_GR9NcOgBEeOTe_bwk1ODUg"/>
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_GR9NfOgBEeOTe_bwk1ODUg" label="Save" iconURI="platform:/plugin/org.example.e4.quickstart/icons/save_edit.png" command="_GR9Nc-gBEeOTe_bwk1ODUg"/>
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_GR9NfegBEeOTe_bwk1ODUg" label="Quit" command="_GR9NbOgBEeOTe_bwk1ODUg"/>
+      <children xsi:type="menu:Menu" xmi:id="_GR9NeugBEeOTe_bwk1ODUg" label="%menu.label.1">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_GR9Ne-gBEeOTe_bwk1ODUg" label="%handledmenuitem.label.1" iconURI="platform:/plugin/org.example.e4.quickstart/icons/sample.png" command="_GR9NcOgBEeOTe_bwk1ODUg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_GR9NfOgBEeOTe_bwk1ODUg" label="%handledmenuitem.label.2" iconURI="platform:/plugin/org.example.e4.quickstart/icons/save_edit.png" command="_GR9Nc-gBEeOTe_bwk1ODUg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_GR9NfegBEeOTe_bwk1ODUg" label="%handledmenuitem.label.3" command="_GR9NbOgBEeOTe_bwk1ODUg"/>
       </children>
-      <children xsi:type="menu:Menu" xmi:id="_GR9NfugBEeOTe_bwk1ODUg" label="Help">
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_GR90cOgBEeOTe_bwk1ODUg" label="About" command="_GR9NdugBEeOTe_bwk1ODUg"/>
+      <children xsi:type="menu:Menu" xmi:id="_GR9NfugBEeOTe_bwk1ODUg" label="%menu.label.2">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_GR90cOgBEeOTe_bwk1ODUg" label="%handledmenuitem.label.4" command="_GR9NdugBEeOTe_bwk1ODUg"/>
       </children>
     </mainMenu>
     <trimBars xmi:id="_GR90dugBEeOTe_bwk1ODUg">
@@ -41,10 +41,10 @@
     <children xmi:id="_GR9NaugBEeOTe_bwk1ODUg" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_GR9Na-gBEeOTe_bwk1ODUg" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
   </rootContext>
-  <commands xmi:id="_GR9NbOgBEeOTe_bwk1ODUg" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
-  <commands xmi:id="_GR9NcOgBEeOTe_bwk1ODUg" elementId="org.example.e4.quickstart.open" commandName="openCommand"/>
-  <commands xmi:id="_GR9Nc-gBEeOTe_bwk1ODUg" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
-  <commands xmi:id="_GR9NdugBEeOTe_bwk1ODUg" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_GR9NbOgBEeOTe_bwk1ODUg" elementId="org.eclipse.ui.file.exit" commandName="%command.commandname.1"/>
+  <commands xmi:id="_GR9NcOgBEeOTe_bwk1ODUg" elementId="org.example.e4.quickstart.open" commandName="%command.commandname.2"/>
+  <commands xmi:id="_GR9Nc-gBEeOTe_bwk1ODUg" elementId="org.eclipse.ui.file.save" commandName="%command.commandname.3"/>
+  <commands xmi:id="_GR9NdugBEeOTe_bwk1ODUg" elementId="org.eclipse.ui.help.aboutAction" commandName="%command.commandname.4"/>
   <addons xmi:id="_GR9NYugBEeOTe_bwk1ODUg" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_GR9NY-gBEeOTe_bwk1ODUg" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_GR9NZOgBEeOTe_bwk1ODUg" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

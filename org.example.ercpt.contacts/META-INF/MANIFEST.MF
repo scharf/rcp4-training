@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: e4 Contacts
+Bundle-SymbolicName: org.example.ercpt.contacts
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Michael Scharf
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

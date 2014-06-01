@@ -4,10 +4,13 @@
     <mainMenu xmi:id="_q3i5cOkuEeOUw7a123RgAQ" elementId="menu:org.eclipse.ui.main.menu">
       <children xsi:type="menu:Menu" xmi:id="_xcoXEOkuEeOUw7a123RgAQ" elementId="org.example.ercpt.contacts.menu.file" label="File">
         <children xsi:type="menu:DirectMenuItem" xmi:id="_FDwHoOkvEeOUw7a123RgAQ" elementId="org.eclipse.ui.file.exit" label="Exit (Direct)" contributionURI="bundleclass://org.example.ercpt.contacts/org.example.ercpt.contacts.ExitHandler"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_huJV4Ok3EeOUw7a123RgAQ" elementId="org.example.ercpt.contacts.handledmenuitem.exit_handler" command="_RI6pAOk3EeOUw7a123RgAQ"/>
       </children>
     </mainMenu>
   </children>
   <handlers xmi:id="_W6M2sOktEeOUw7a123RgAQ" elementId="org.example.ercpt.contacts.handler.exit" contributionURI="bundleclass://org.example.ercpt.contacts/org.example.ercpt.contacts.ExitHandler"/>
+  <handlers xmi:id="_dZIdcOk3EeOUw7a123RgAQ" elementId="org.example.ercpt.contacts.handler.exit" contributionURI="bundleclass://org.example.ercpt.contacts/org.example.ercpt.contacts.ExitHandler" command="_RI6pAOk3EeOUw7a123RgAQ"/>
+  <commands xmi:id="_RI6pAOk3EeOUw7a123RgAQ" elementId="org.example.ercpt.contacts.command.exit" commandName="Exit (Command)"/>
   <addons xmi:id="_qkPrUekgEeOUw7a123RgAQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_qkPrUukgEeOUw7a123RgAQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_qkPrU-kgEeOUw7a123RgAQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

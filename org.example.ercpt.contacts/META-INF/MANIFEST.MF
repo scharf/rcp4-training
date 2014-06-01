@@ -7,5 +7,10 @@ Bundle-Vendor: Michael Scharf
 Require-Bundle: org.eclipse.equinox.app,
  org.eclipse.e4.core.di,
  javax.inject,
- org.eclipse.e4.ui.workbench;bundle-version="1.1.0"
+ org.eclipse.e4.ui.workbench;bundle-version="1.1.0",
+ javax.annotation,
+ org.eclipse.swt,
+ org.eclipse.jface,
+ org.eclipse.e4.ui.di,
+ org.eclipse.e4.ui.workbench.renderers.swt
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7

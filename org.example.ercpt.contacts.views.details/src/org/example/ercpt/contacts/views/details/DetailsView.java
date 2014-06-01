@@ -2,7 +2,10 @@ package org.example.ercpt.contacts.views.details;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
+import javax.inject.Named;
 
+import org.eclipse.e4.core.di.annotations.Optional;
+import org.eclipse.e4.ui.services.IServiceConstants;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -45,5 +48,20 @@ public class DetailsView {
 		
 		email = new Text(parent, SWT.BORDER);
 		email.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+	}
+
+	@Inject
+	public void setSelection(@Optional @Named(IServiceConstants.ACTIVE_SELECTION) String selection) {
+		if(firstName==null)
+			return;
+		String[] strings = new String[]{"",""};
+		if(selection!=null) {
+			String[] s = selection.split("\\s+");
+			if(s.length == 2) {
+				strings = s;
+			}
+		}
+		firstName.setText(strings[0]);
+		lastName.setText(strings[1]);
 	}
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_qkPrUOkgEeOUw7a123RgAQ" elementId="org.example.ercpt.contacts.application">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_5zmxcOkgEeOUw7a123RgAQ" elementId="org.example.ercpt.contacts.trimmedwindow.0" label="e4 Contacts" width="800" height="600"/>
+  <handlers xmi:id="_W6M2sOktEeOUw7a123RgAQ" elementId="org.example.ercpt.contacts.handler.exit" contributionURI="bundleclass://org.example.ercpt.contacts/org.example.ercpt.contacts.ExitHandler"/>
   <addons xmi:id="_qkPrUekgEeOUw7a123RgAQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_qkPrUukgEeOUw7a123RgAQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_qkPrU-kgEeOUw7a123RgAQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

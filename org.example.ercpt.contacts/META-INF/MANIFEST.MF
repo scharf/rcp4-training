@@ -4,5 +4,8 @@ Bundle-Name: e4 Contacts
 Bundle-SymbolicName: org.example.ercpt.contacts;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: Michael Scharf
+Require-Bundle: org.eclipse.equinox.app,
+ org.eclipse.e4.core.di,
+ javax.inject,
+ org.eclipse.e4.ui.workbench;bundle-version="1.1.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Require-Bundle: org.eclipse.equinox.app

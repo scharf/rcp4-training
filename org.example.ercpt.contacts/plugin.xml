@@ -5,6 +5,15 @@
          id="product"
          name="Contacts Product"
          point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            description="e4 Contacts Application"
+            name="e4 Contacts">
+         <property
+               name="appName"
+               value="e4 Contacts App">
+         </property>
+      </product>
    </extension>
 
 </plugin>

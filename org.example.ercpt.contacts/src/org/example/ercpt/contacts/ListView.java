@@ -12,18 +12,21 @@ import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
+import org.example.ercpt.contacts.model.Contact;
+import org.example.ercpt.contacts.model.ContactsRepository;
 
 public class ListView {
 	private TableViewer tableViewer;
 	@Inject
 	private ESelectionService selectionService;
 	@PostConstruct
-	public void postConstruct(Composite parent) {
+	public void postConstruct(Composite parent, ContactsRepository contacts) {
 		parent.setLayout(new GridLayout(1, false));
 		tableViewer = new TableViewer(parent);
-		tableViewer.add("Michael Scharf");
-		tableViewer.add("Kai Tödter");
-		tableViewer.add("Lars Vogel");
+		for(Contact contact :contacts.getAllContacts()) {
+			tableViewer.add(contact.getFirstName()+ " " + contact.getLastName());
+			
+		}
 		tableViewer.getTable().setLayoutData(new GridData(GridData.FILL_BOTH));
 		tableViewer.addSelectionChangedListener(new ISelectionChangedListener() {
 			@Override

@@ -13,5 +13,6 @@ Require-Bundle: org.eclipse.equinox.app,
  org.eclipse.jface,
  org.eclipse.e4.ui.di,
  org.eclipse.e4.ui.workbench.renderers.swt,
- org.example.ercpt.contacts.views.details;bundle-version="1.0.0"
+ org.example.ercpt.contacts.views.details;bundle-version="1.0.0",
+ org.example.ercpt.contacts.model
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7

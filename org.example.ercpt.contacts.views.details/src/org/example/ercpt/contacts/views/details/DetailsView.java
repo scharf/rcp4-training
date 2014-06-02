@@ -52,7 +52,7 @@ public class DetailsView {
 
 	@Inject
 	public void setSelection(@Optional @Named(IServiceConstants.ACTIVE_SELECTION) String selection) {
-		if(firstName==null)
+		if(firstName==null || firstName.isDisposed())
 			return;
 		String[] strings = new String[]{"",""};
 		if(selection!=null) {

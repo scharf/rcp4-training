@@ -1,16 +1,22 @@
 package org.example.ercpt.contacts.model.svc;
 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+
 import org.example.ercpt.contacts.model.Contact;
 
 public class ContactImpl implements Contact {
 	private String firstName;
 	private String lastName;
 	private String email;
+	private final PropertyChangeSupport changes;
 
 	public ContactImpl(String firstName, String lastName, String email) {
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.email = email;	}
+		this.email = email;
+		changes = new PropertyChangeSupport(this);
+	}
 
 	@Override
 	public String getFirstName() {
@@ -19,7 +25,7 @@ public class ContactImpl implements Contact {
 
 	@Override
 	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+		changes.firePropertyChange(FIELD_FIRST_NAME, this.firstName, this.firstName = firstName);
 	}
 
 	@Override
@@ -29,7 +35,7 @@ public class ContactImpl implements Contact {
 
 	@Override
 	public void setLastName(String lastName) {
-		this.lastName = lastName;
+		changes.firePropertyChange(FIELD_LAST_NAME, this.lastName, this.lastName = lastName);
 	}
 
 	@Override
@@ -39,7 +45,17 @@ public class ContactImpl implements Contact {
 
 	@Override
 	public void setEmail(String email) {
-		this.email = email;
+		changes.firePropertyChange(FIELD_EMAIL, this.email, this.email = email);
+	}
+	
+	@Override
+	public void addPropertyChangeListener(PropertyChangeListener listener) {
+		changes.addPropertyChangeListener(listener);
+	}
+
+	@Override
+	public void removePropertyChangeListener(PropertyChangeListener listener) {
+		changes.removePropertyChangeListener(listener);
 	}
 
 	@Override

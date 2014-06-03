@@ -9,5 +9,12 @@ Require-Bundle: org.eclipse.e4.ui.model.workbench;bundle-version="1.1.0.v2014051
  org.eclipse.e4.ui.workbench.swt;bundle-version="0.12.100",
  org.eclipse.swt,
  org.eclipse.e4.ui.services,
- org.eclipse.e4.core.di
+ org.eclipse.e4.core.di,
+ org.example.ercpt.contacts.model;bundle-version="1.0.0",
+ org.eclipse.core.databinding.observable,
+ org.eclipse.jface.databinding,
+ org.eclipse.core.databinding.beans
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.eclipse.core.databinding,
+ org.eclipse.core.databinding.observable.value,
+ org.example.ercpt.contacts.model
